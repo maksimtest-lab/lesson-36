@@ -7,8 +7,35 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
+        <p>Lesson 36 - TypeScript</p>
 
     <script src="./dist/script.js"></script>
+    <script>
+        let x = 3;
 
+        function fn() {
+            console.log(`x: ${x}`); // 3 (local variable x);
+
+            x = 10;
+
+            return;
+
+            function x() {}
+
+        }
+
+        fn();
+
+        console.log(x);
+
+        // ----------------
+        function bbb(x, y, a) {
+            console.log(arguments);
+            arguments[2] = 10;
+            alert(a);
+        }
+
+        bbb(1, 2, 3);
+    </script>
     </body>
 </html>
